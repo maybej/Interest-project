@@ -1,4 +1,4 @@
-package com.leafive.maybe.web.service.customerSide;
+package com.leafive.maybe.web.customerSide;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -1,4 +1,4 @@
-package com.leafive.maybe.web.service.serverSide;
+package com.leafive.maybe.web.serverSide;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

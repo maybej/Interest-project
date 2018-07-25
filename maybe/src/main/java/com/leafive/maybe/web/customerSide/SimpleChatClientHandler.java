@@ -1,4 +1,4 @@
-package com.leafive.maybe.web.service.customerSide;
+package com.leafive.maybe.web.customerSide;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
