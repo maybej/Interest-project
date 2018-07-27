@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.leafive.maybe.web.mapper.UserMapper" >
+    <resultMap id="BaseResultMap" type="com.leafive.maybe.web.model.User" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="age" property="age" jdbcType="INTEGER" />
+        <result column="address" property="address" jdbcType="VARCHAR"/>
+    </resultMap>
+    
+    <sql id="Base_Column_List" >
+        id, name, age, address
+    </sql>
+ 
+    <select id="getAll" resultMap="BaseResultMap"  >
+       SELECT 
+       <include refid="Base_Column_List" />
+	   FROM user
+    </select>
+ 
+    <select id="getOne" parameterType="java.lang.Integer" resultMap="BaseResultMap" >
+        SELECT 
+       <include refid="Base_Column_List" />
+	   FROM user
+	   WHERE id = #{id}
+    </select>
+ 
+    <insert id="insert" parameterType="com.leafive.maybe.web.model.User" >
+       INSERT INTO 
+       		user
+       		(id,name,age,address) 
+       	VALUES
+       		(#{id},#{name}, #{age}, #{address})
+    </insert>
+    
+    <update id="update" parameterType="com.leafive.maybe.web.model.User" >
+       UPDATE 
+       		user 
+       SET 
+       	<if test="name != null">name = #{name},</if>
+       	<if test="age != null">age = #{age},</if>
+       	address = #{address}
+       WHERE 
+       		id = #{id}
+    </update>
+    
+    <delete id="delete" parameterType="java.lang.Integer" >
+       DELETE FROM
+       		 user 
+       WHERE 
+       		 id =#{id}
+    </delete>
+ 
+</mapper>
