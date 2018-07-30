@@ -73,6 +73,13 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.18</version>
+			<scope>provided</scope>
+		</dependency>
+
 		<!--MyBatis提供了拦截器接口，我们可以实现自己的拦截器，将其作为一个plugin装入到SqlSessionFactory中。 Github上有位开发者写了一个分页插件，我觉得使用起来还可以，挺方便的。 
 			Github项目地址：https://github.com/pagehelper/Mybatis-PageHelper -->
 		<dependency>
@@ -90,7 +97,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 
 
 
