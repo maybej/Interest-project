@@ -2,11 +2,9 @@ package com.leafive.maybe.web.controller;
 
 import java.util.List;
 
+import com.leafive.maybe.web.service.HystrixService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -21,6 +19,9 @@ public class MyController {
 	
 	@Autowired
 	private UserMapper userMapper;
+
+	@Autowired
+	HystrixService hystrixService;
 	
 	
 	@RequestMapping("/hello")
@@ -38,6 +39,12 @@ public class MyController {
 		result.setTotal(pageInfo.getSize());
 		return result;
 	}
-	
+
+
+	@GetMapping("/hystrixtest")
+	public String hystrixtest() throws Exception{
+		return hystrixService.firstUserInterface();
+	}
+
 
 }
