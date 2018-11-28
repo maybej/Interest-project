@@ -92,6 +92,15 @@
 			<version>1.4.4.RELEASE</version>
 		</dependency>
 
+		<!--rocketmq-->
+		<dependency>
+			<groupId>com.alibaba.rocketmq</groupId>
+			<artifactId>rocketmq-client</artifactId>
+			<version>3.2.6</version>
+		</dependency>
+
+
+
 	</dependencies>
 
 	<build>
