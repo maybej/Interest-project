@@ -1,4 +1,4 @@
-package com.leafive.maybe.web.RocketMq;
+package com.leafive.maybe.web.rocketMq;
 
 import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;

@@ -1,3 +1,4 @@
+/* github.com/orange1438 */
 package com.leafive.maybe.web.mapper;
 
 import com.leafive.maybe.web.model.Product;

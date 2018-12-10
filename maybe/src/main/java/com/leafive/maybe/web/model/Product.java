@@ -1,15 +1,13 @@
+/* github.com/orange1438 */
 package com.leafive.maybe.web.model;
 
 import java.math.BigDecimal;
 
 public class Product {
-    /** */
     private Long id;
 
-    /** 商品名*/
     private String name;
 
-    /** 价格*/
     private BigDecimal price;
 
     public Long getId() {

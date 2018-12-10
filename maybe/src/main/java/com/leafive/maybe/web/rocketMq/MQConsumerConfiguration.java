@@ -1,4 +1,4 @@
-package com.leafive.maybe.web.RocketMq;
+package com.leafive.maybe.web.rocketMq;
 
 import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
 import com.alibaba.rocketmq.common.consumer.ConsumeFromWhere;

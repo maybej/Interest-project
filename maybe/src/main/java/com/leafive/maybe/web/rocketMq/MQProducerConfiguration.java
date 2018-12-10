@@ -1,4 +1,4 @@
-package com.leafive.maybe.web.RocketMq;
+package com.leafive.maybe.web.rocketMq;
 
 import com.alibaba.rocketmq.client.exception.MQClientException;
 import com.alibaba.rocketmq.client.producer.DefaultMQProducer;

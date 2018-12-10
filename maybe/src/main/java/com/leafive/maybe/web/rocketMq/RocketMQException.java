@@ -1,4 +1,4 @@
-package com.leafive.maybe.web.RocketMq;
+package com.leafive.maybe.web.rocketMq;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -11,7 +11,7 @@ import com.alibaba.rocketmq.client.producer.SendResult;
 import com.alibaba.rocketmq.common.message.Message;
 import com.alibaba.rocketmq.common.message.MessageExt;
 import com.alibaba.rocketmq.remoting.exception.RemotingException;
-import com.leafive.maybe.web.RocketMq.MQConsumeMsgListenerProcessor;
+import com.leafive.maybe.web.rocketMq.MQConsumeMsgListenerProcessor;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
